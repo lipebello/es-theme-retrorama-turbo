@@ -1,0 +1,60 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<include>./../theme.xml</include>
+
+<view name="system">
+ <image name="background_color" extra="true">
+  <path>./sys.jpg</path>
+  <origin>0 0</origin>
+  <pos>0 0</pos>
+  <size>1 1</size>
+ </image>
+
+ <image name="logo">
+  <path>./../_art/logo.png</path>
+ </image>
+</view>
+
+<view name="basic, detailed, grid, video">
+
+ <image name="background_color" extra="true">
+  <path>./../_art/gl.jpg</path>
+  <origin>0 0</origin>
+  <pos>0 0</pos>
+  <size>1 1</size>
+  <zIndex>1</zIndex>
+ </image>
+ 
+ <image name="char" extra="true">
+  <path>./char.jpg</path>
+  <origin>.5 .5</origin>
+  <pos>.8583 .29</pos>
+  <maxSize>.222 .5</maxSize>
+ </image>
+ 
+  <image name="logo">
+  <path>./logo.png</path>
+  <origin>.5 .5</origin>
+  <pos>.335 .11</pos>
+  <maxSize>.255 .219</maxSize>
+ </image>
+ 
+<image name="console" extra="true">
+  <path>./console.png</path>
+  <origin>.5 .5</origin>
+  <pos>.63 .386</pos>
+  <maxSize>.204 .306</maxSize>
+</image> 
+
+<!--
+  <image name="helper" extra="true">
+  <path>./../_art/white.png</path>
+  <color>0000FF50</color>
+ <origin>.5 .5</origin>
+  <pos>.863 .762</pos>
+  <size>.206 .316</size>
+ </image>
+-->
+</view>
+
+</theme>
