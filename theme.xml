@@ -1,0 +1,284 @@
+<!--
+theme name:     Retrorama
+version:        1.75
+author:         Filipe Bello
+email:          filipebello@yahoo.com.br
+website:        
+license:        creative commons CC-BY-NC-SA
+Based on: 
+1.0 to 1.3 		- Tutorial from Matt Kennedy, you can view it on https://github.com/RetroPie/RetroPie-Setup/wiki/Creating-Your-Own-EmulationStation-Theme
+1.4	and foward	- Basevid theme from Matt Kennedy. This dude rock!
+font: comic.ttf
+-->
+
+<theme>
+
+	<formatVersion>4</formatVersion>
+	
+	<!-- Carousel (Hide white bar and number of games-->
+<feature supported="carousel">
+
+<view name="system">
+
+<carousel name="systemcarousel">
+	<pos>0 0</pos>
+	<color>00000000</color>
+	<maxLogoCount>1</maxLogoCount>
+</carousel>
+
+<text name="systemInfo">
+    <fontPath>./_art/comic.ttf</fontPath>
+	<alignment>right</alignment>
+	<backgroundColor>00000000</backgroundColor>
+	<color>ffcc33</color>
+	<pos>0.010 0.943</pos>
+	<size>0.980 0.050</size>
+	<fontSize>0.025</fontSize>
+</text>
+
+</view>
+</feature>
+<!-- Carousel -->
+
+<view name="system">
+
+<image name="background">
+	<tile>true</tile>
+	<color>23232300</color>
+	<path>./_art/white.png</path>
+	<size>1 1</size>
+	<pos>0 0</pos>
+</image>
+
+<helpsystem name="help">
+    <textColor>ffcc33</textColor>
+    <iconColor>ffcc33</iconColor>
+    <fontPath>./_art/comic.ttf</fontPath>
+    <fontSize>0.025</fontSize>
+</helpsystem>
+</view>
+
+<view name="basic, detailed, grid, video">
+
+<image name="background">
+	<tile>true</tile>
+	<color>232323</color>
+	<path>./_art/white.png</path>
+	<size>1 1</size>
+	<pos>0 0</pos>
+	<zIndex>1</zIndex>
+</image>
+
+<helpsystem name="help">
+	<pos>.007 1.936</pos>
+    <textColor>00000000</textColor>
+    <iconColor>00000000</iconColor>
+    <fontPath>./_art/comic.ttf</fontPath>
+    <fontSize>0.016</fontSize>
+</helpsystem>
+
+</view>
+
+	
+<view name="basic">
+
+<image name="logo">
+    <path>./_art/logo.png</path>
+</image>
+
+<textlist name="gamelist">
+	<selectorColor>eac42830</selectorColor>
+	<selectedColor>f79420</selectedColor>
+	<primaryColor>EEEEEE</primaryColor>
+	<secondaryColor>eac428</secondaryColor>
+	<fontPath>./_art/comic.ttf</fontPath>
+	<scrollSound>./_art/scroll_sound.wav</scrollSound>
+	<alignment>left</alignment>
+	<pos>0.04 0.23</pos>
+	<size>0.415 0.57</size>
+	<fontSize>0.022</fontSize>
+</textlist>
+
+</view>
+
+<view name="detailed, video">
+
+<image name="logo">
+    <path>./_art/logo.png</path>
+</image>
+
+<!--
+<image name="Help marquee" extra="trye">
+	<color>0000FF50</color>
+	<path>./_art/white.png</path>
+	<origin>0 0</origin>
+	<pos>0.53 0.609</pos>
+	<size>0.202 0.09</size>
+	<zIndex>200</zIndex>
+</image>
+-->
+
+<image name="Help description" extra="trye">
+	<color>232323DD</color>
+	<path>./_art/help.png</path>
+	<origin>0 0.5</origin>
+	<pos>0.006 0.96</pos>
+	<maxSize>0.478 0.054</maxSize>
+	<zIndex>200</zIndex>
+</image>
+
+<textlist name="gamelist">
+	<selectorColor>c02f15</selectorColor>
+	<selectedColor>232323</selectedColor>
+	<primaryColor>f0f0f0</primaryColor>
+	<secondaryColor>eac428</secondaryColor>
+	<fontPath>./_art/comic.ttf</fontPath>
+	<scrollSound>./_art/scroll_sound.wav</scrollSound>
+	<alignment>left</alignment>
+	<pos>0.04 0.23</pos>
+	<size>0.415 0.69</size>
+	<fontSize>0.02</fontSize>
+</textlist>
+
+<text name="md_lbl_rating, md_lbl_players, md_lbl_genre, md_lbl_releasedate, md_lbl_playcount, md_lbl_lastplayed, md_lbl_developer, md_lbl_publisher">
+	<color>232323DD</color>
+	<forceUppercase>1</forceUppercase>
+	<fontPath>./_art/comic.ttf</fontPath>
+	<fontSize>0.024</fontSize>
+	<size>0.22 0.01</size>
+</text>
+
+<text name="md_developer, md_players, md_publisher, md_genre, md_playcount">
+	<color>232323DD</color>
+	<forceUppercase>1</forceUppercase>
+	<fontPath>./_art/comic.ttf</fontPath>
+	<fontSize>0.020</fontSize>
+	<size>0.18 0.02</size>
+</text>
+	
+<datetime name="md_releasedate, md_lastplayed">
+	<color>232323DD</color>
+	<forceUppercase>1</forceUppercase>
+	<fontPath>./_art/comic.ttf</fontPath>
+	<fontSize>0.020</fontSize>
+	<size>0.23 0.02</size>
+</datetime>
+
+<text name="md_lbl_rating">
+	<color>23232300</color>
+	<pos>0.750 2.455</pos>
+</text>
+
+	<rating name="md_rating">
+	<pos>0.76 0.041</pos>
+	<size>0.075 0.065</size>
+	<filledPath>./_art/full.png</filledPath>
+	<color>FFFFFFEE</color>
+	<unfilledPath>./_art/empty.png</unfilledPath>
+	</rating>
+
+<text name="md_lbl_players">
+	<color>232323DD</color>
+	<pos>0.795 0.165</pos>
+</text>
+
+	<text name="md_players">
+	<color>232323DD</color>
+	<forceUppercase>1</forceUppercase>
+	<size>0.18 0.02</size>
+	<pos>0.86 0.16</pos>
+	<fontSize>0.03</fontSize>
+	</text>
+
+<text name="md_lbl_genre">
+	<pos>0.754 0.115</pos>
+</text>
+
+	<text name="md_genre">
+	<pos>0.81 0.109</pos>
+	<size>0.15 0.02</size>
+	</text>
+
+<text name="md_lbl_developer">
+	<pos>0.74 2.94</pos>
+</text>
+	
+	<text name="md_developer">
+	<pos>0.53 0.936</pos>
+	</text>
+
+<text name="md_lbl_publisher">
+	<pos>0.745 2.30</pos>
+</text>
+	
+	<text name="md_publisher">
+	<pos>0.72 0.936</pos>
+	</text>
+
+<text name="md_lbl_releasedate">
+	<pos>0.74 2.36</pos>
+</text>
+
+	<datetime name="md_releasedate">
+	<pos>0.9 0.936</pos>
+	</datetime>
+
+<text name="md_lbl_playcount">
+	<pos>0.77 0.14</pos>
+</text>
+
+	<text name="md_playcount">
+	<size>0.18 0.02</size>
+	<pos>0.88 0.134</pos>
+	<fontSize>0.025</fontSize>
+	</text>
+	
+<text name="md_lbl_lastplayed">
+	<pos>0.74 2.48</pos>
+</text>
+
+<datetime name="md_lastplayed">
+	<pos>0.75 2.50</pos>
+</datetime>
+
+</view>
+
+<view name="detailed, video">
+
+<image name="md_image">
+	<origin>.5 .5</origin>
+	<pos>0.636 0.745</pos>
+	<maxSize>0.216 0.361</maxSize>
+</image>
+
+<text name="md_description">
+  <pos>.76 .605</pos>
+  <size>.206 .316</size>
+	<color>232323DD</color>
+	<fontPath>./_art/comic.ttf</fontPath>
+	<fontSize>0.022</fontSize>
+	<alignment>left</alignment>
+	<forceUppercase>0</forceUppercase>
+	<lineSpacing>1</lineSpacing>
+</text>
+
+<video name="md_video">
+	<origin>.5 .5</origin>
+	<pos>0.636 0.745</pos>
+	<maxSize>0.216 0.361</maxSize>
+	<delay>0.5</delay>
+	<showSnapshotNoVideo>false</showSnapshotNoVideo>
+	<showSnapshotDelay>false</showSnapshotDelay>
+</video>
+
+<image name="md_marquee">
+	<origin>0.5 0.5</origin>
+	<pos>0.630 0.124</pos>
+	<maxSize>0.205 0.169</maxSize>
+</image>
+
+</view>
+
+
+
+</theme>
