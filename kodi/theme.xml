@@ -22,8 +22,8 @@
 </text>
 
 <rating name="md_rating">
-	<filledPath>./_art/empty.png</filledPath>
-	<unfilledPath>./_art/empty.png</unfilledPath>
+	<filledPath>./../_art/empty.png</filledPath>
+	<unfilledPath>./../_art/empty.png</unfilledPath>
 </rating>
 
  <image name="background_color" extra="true">
