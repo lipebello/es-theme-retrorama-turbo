@@ -30,6 +30,7 @@
   <origin>.5 .5</origin>
   <pos>.8583 .29</pos>
   <maxSize>.222 .5</maxSize>
+  <zIndex>2</zIndex>
  </image>
  
   <image name="logo">
@@ -37,6 +38,7 @@
   <origin>.5 .5</origin>
   <pos>.335 .11</pos>
   <maxSize>.255 .219</maxSize>
+  <zIndex>3</zIndex>
  </image>
  
 <image name="console" extra="true">
@@ -44,6 +46,7 @@
   <origin>.5 .5</origin>
   <pos>.63 .386</pos>
   <maxSize>.204 .306</maxSize>
+  <zIndex>3</zIndex>
 </image> 
 
 <rating name="md_rating">
@@ -65,15 +68,6 @@
 	<fontSize>0.02</fontSize>
 </textlist>
 
-<!--
-  <image name="helper" extra="true">
-  <path>./../_art/white.png</path>
-  <color>0000FF50</color>
- <origin>.5 .5</origin>
-  <pos>.863 .762</pos>
-  <size>.206 .316</size>
- </image>
--->
 </view>
 
 </theme>
