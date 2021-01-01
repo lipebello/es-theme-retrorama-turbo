@@ -107,17 +107,6 @@ font: comic.ttf
     <path>./_art/logo.png</path>
 </image>
 
-<!--
-<image name="Help marquee" extra="trye">
-	<color>0000FF50</color>
-	<path>./_art/white.png</path>
-	<origin>0 0</origin>
-	<pos>0.53 0.609</pos>
-	<size>0.202 0.09</size>
-	<zIndex>200</zIndex>
-</image>
--->
-
 <image name="Help description" extra="trye">
 	<color>232323DD</color>
 	<path>./_art/help.png</path>
@@ -175,6 +164,7 @@ font: comic.ttf
 	<filledPath>./_art/full.png</filledPath>
 	<color>FFFFFFEE</color>
 	<unfilledPath>./_art/empty.png</unfilledPath>
+	<zIndex>4</zIndex>
 	</rating>
 
 <text name="md_lbl_players">
